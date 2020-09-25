@@ -5,4 +5,7 @@
     <RootNamespace>my_static_webapp_domain</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>
