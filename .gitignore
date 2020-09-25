@@ -403,3 +403,10 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+
+# VSCode
+.vscode/
+
+# Azurite
+__blobstorage__
+__azurite_db_*
