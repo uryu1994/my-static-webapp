@@ -16,7 +16,7 @@ namespace my_static_webapp_api
     {
         [FunctionName("GetWeatherList")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
@@ -32,7 +32,7 @@ namespace my_static_webapp_api
                 { new DateTime(2018, 5, 10), -2, "Chilly" }
             };
 
-            return new OkObjectResult(JsonConvert.SerializeObject(responseData));
+            return new OkObjectResult(responseData);
         }
     }
 }
