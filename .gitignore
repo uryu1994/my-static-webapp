@@ -405,7 +405,6 @@ ASALocalRun/
 .localhistory/
 
 # VSCode
-.vscode/
 
 # Azurite
 __blobstorage__
